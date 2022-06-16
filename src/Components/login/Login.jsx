@@ -3,6 +3,7 @@ import "./login.css";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { Button, Checkbox, Form, Input, Alert } from "antd";
 import { useState } from "react";
+import {Link} from "react-router-dom";
 
 const Login = () => {
   const [showAlert, setshowAlert] = useState(false);
@@ -44,11 +45,12 @@ const Login = () => {
 
 
   return (
+      <>
     <div className="mainAlertContainer">
       {loginSuccess && (
         <Alert
-          message="Success Tips"
-          description="Detailed description and advice about successful copywriting."
+          message="Success"
+          description="You have logged in successfully"
           type="success"
           showIcon
           closable
@@ -66,7 +68,7 @@ const Login = () => {
             ) 
         }
       
-
+      </div>
       <div className="mainContainer">
         <Form
           name="normal_login"
@@ -118,9 +120,9 @@ const Login = () => {
           <Form.Item>
             <Form.Item name="remember" valuePropName="checked" noStyle>
               <Checkbox>Remember me</Checkbox>
-              <a className="login-form-forgot" href="">
+              <Link className="login-form-forgot" to="/">
                 Forgot password
-              </a>
+              </Link>
             </Form.Item>
           </Form.Item>
         </Form>
@@ -128,7 +130,7 @@ const Login = () => {
           <img src={img} alt="img1" className="mainImg" />
         </div>
       </div>
-    </div>
+      </>
   );
 };
 

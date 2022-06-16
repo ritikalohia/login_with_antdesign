@@ -1,10 +1,11 @@
+
+.ant-alert.ant-alert-error.ant-alert-with-description , .ant-alert.ant-alert-success.ant-alert-with-description {
+  margin: 0px ;
+}
+
 .ant-alert{
   width:500px;
   margin-right:0px;
-}
-
-.ant-alert.ant-alert-error.ant-alert-with-description {
-  margin: 0px 200px;
 }
 
 .mainAlertContainer{
@@ -12,7 +13,7 @@
 }
 
 .login-form{
-    padding: 300px 0px;
+    padding: 30px 0px;
 }
 
 .login-form h1{
