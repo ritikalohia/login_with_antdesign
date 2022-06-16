@@ -1,0 +1,58 @@
+.site-layout-content {
+    min-height: 280px;
+    padding: 24px;
+    background: #fff;
+  }
+  #components-layout-demo-top .logo {
+    float: left;
+    width: 120px;
+    height: 31px;
+    margin: 16px 24px 16px 0;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .ant-row-rtl #components-layout-demo-top .logo {
+    float: right;
+    margin: 16px 0 16px 24px;
+  }
+
+  .ant-layout-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+      height: 50px;
+  }
+
+  .ant-menu{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .ant-menu .ant-btn{
+        margin: 20px;
+        padding: 0px 40px;
+        color:white
+  }
+
+  .ant-menu-item{
+        background-color: #023047;
+        margin:20px;
+  }
+
+  .logo img{
+      height:30px;
+  }
+  
+  @media screen and (max-width:480px){
+    .ant-menu .ant-btn{
+      margin: 5px;
+      padding: 0px 10px;
+      color:white
+    }
+
+    .ant-layout-header{
+      padding: 0px 20px;
+    }
+}  
+
