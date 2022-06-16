@@ -1,15 +1,14 @@
 .ant-alert{
   width:500px;
-  margin-right:0px
+  margin-right:0px;
 }
 
 .ant-alert.ant-alert-error.ant-alert-with-description {
   margin: 0px 200px;
 }
+
 .mainAlertContainer{
   display: inline-block;
-  align-items: center;
-  justify-content: center;
 }
 
 .login-form{
@@ -25,17 +24,18 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-top:100px;
+    padding-top:50px;
 }
 
 .mainImg{
-    height: 600px;
+    height: 70vh;
 }
 
 .ant-form-item{
     width: 350px;
     margin: 10px 0px !important;
 }
+
 
 .ant-btn.login-form-button{
     width:100%;
@@ -69,9 +69,7 @@
   }
 
 @media screen and (max-width:480px){
-    .mainImg{
-        display: none;
-    }
+
     .ant-alert{
       width:300px;
     }
@@ -79,3 +77,13 @@
       margin: 0px 20px;
   }
 }  
+
+@media screen and (max-width:800px){
+  .mainImg{
+    display: none;
+  }
+  .ant-alert.ant-alert-error.ant-alert-with-description {
+    margin: 0px;
+    width: 300px;
+  }
+}
